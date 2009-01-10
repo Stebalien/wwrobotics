@@ -1,5 +1,5 @@
 #summary FIRST Robotics 2009 Manuals
-#labels Manuals
+#labels Manual,2009
 = Manuals =
 == Control System ==
   # [http://usfirst.org/uploadedFiles/1-FRC%20Control%20System-Introduction-Rev-0-4c.pdf Chapter 1 Introduction]
