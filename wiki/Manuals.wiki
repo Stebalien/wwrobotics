@@ -1,6 +1,5 @@
 #summary FIRST Robotics 2009 Manuals
 #labels Manual,2009
-= Manuals =
 == Control System ==
   # [http://usfirst.org/uploadedFiles/1-FRC%20Control%20System-Introduction-Rev-0-4c.pdf Chapter 1 Introduction]
   # [http://usfirst.org/uploadedFiles/2-FRC%20Control%20System-Getting%20Started%20-%20Benchtop%20Test-Rev-0-4d.pdf Chapter 2 Getting Started]
