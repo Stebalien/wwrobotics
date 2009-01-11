@@ -1,0 +1,6 @@
+#summary Eclipse with SVN instructions
+#labels Manual,2009,WIP
+== Installing Eclipse ==
+  # Go to [http://www.eclipse.org/downloads/] and download "Eclipse IDE for C/C++ Developers".
+  # Install as you would any other program.
+*WIP*
