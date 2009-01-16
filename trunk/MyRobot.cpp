@@ -44,8 +44,8 @@ public:
 			if(stick1.GetTrigger()) {
 				myRobot.Drive(0.0, 0.0);
 			}
-			else 
-			myRobot.TankDrive(stick1, stick2); // drive with arcade style (use right stick)
+			else
+				myRobot.TankDrive(stick1, stick2); // drive with arcade style (use right stick)
 		}
 	}
 };
