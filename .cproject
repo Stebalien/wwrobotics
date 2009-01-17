@@ -25,6 +25,7 @@
 <indexAllFiles value="false"/>
 <initialized value="true"/>
 </storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
 </cconfiguration>
 </storageModule>
 </cproject>

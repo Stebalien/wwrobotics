@@ -26,7 +26,7 @@
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC603gnu">
                 <stringAttribute value="-I$(WIND_BASE)/target/h"/>
-                <stringAttribute value="-I$(WIND_BASE)/../WIPLib"/>
+                <stringAttribute value="-I$(WIND_BASE)/../WPILib"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/WPILib"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
             </listAttribute>
@@ -247,12 +247,12 @@
     <buildtargets>
         <buildtarget buildtool="Linker" name="SimpleTemplate" passed="false" targetname="SimpleTemplate">
             <contents>
-                <buildtargetreference name="/SimpleTemplate/SimpleTemplate_partialImage"/>
+                <buildtargetreference name="/SimonBranch/SimpleTemplate_partialImage"/>
             </contents>
         </buildtarget>
         <buildtarget buildtool="Partial Image Linker" name="SimpleTemplate_partialImage" passed="true" targetname="SimpleTemplate_partialImage">
             <contents>
-                <folder name="/SimpleTemplate" recursive="true"/>
+                <folder name="/SimonBranch" recursive="true"/>
             </contents>
         </buildtarget>
     </buildtargets>
