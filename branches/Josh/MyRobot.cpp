@@ -33,7 +33,7 @@ public:
 		GetWatchdog().SetEnabled(false);
 		//servo1.SetAngle(180);
 		myRobot.Drive(0.5, 0.0); 	// drive forwards half speed
-		Wait(2.0); 				//    for 2 seconds
+		Wait(3.0); 				//    for 2 seconds
 		myRobot.Drive(0.0, 0.0);	// stop robot
 	}
 
