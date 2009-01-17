@@ -10,6 +10,7 @@
 <extension id="com.windriver.ide.core.WRScannerInfoProvider" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
 <extension id="com.windriver.ide.core.WRElfParserVxWorks" point="org.eclipse.cdt.core.BinaryParser"/>
 <extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
 </extensions>
 </storageModule>
 <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
@@ -24,7 +25,6 @@
 <indexAllFiles value="false"/>
 <initialized value="true"/>
 </storageModule>
-<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
 </cconfiguration>
 </storageModule>
 </cproject>
