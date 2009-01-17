@@ -1,6 +1,6 @@
 #include "WPILib.h"
-
-/**
+#include "Math.h"
+/*
  * This is a demo program showing the use of the RobotBase class.
  * The SimpleRobot class is the base of a robot application that will automatically call your
  * Autonomous and OperatorControl methods at the right time as controlled by the switches on
@@ -23,7 +23,6 @@ public:
 		treadsController2(4)
 		{
 		GetWatchdog().SetExpiration(300);
-		GetWatchdog().SetEnabled(false); //disable watchdog for testing reasons
 		}
 
 	/**
@@ -38,7 +37,41 @@ public:
 	}
 
 	/**
-	 * Runs the motors with tank steering. 
+	 * Converts a number between 0-255 to -1.0 to 1.0
+	 * Useful for converting axis position of joysticks to
+	 * speeds for speed controllers 
+	 * If number not in range, returns 0.
+	 * Input = Output: 127 = 0, 255 = 1.0, 0 = -0.9921
+	 */
+	float ConvertBitToPercent(float num) {
+		num = floor(num);
+		if( (num>255)||(num<0) ) {
+			num -= 127;
+			num /= 128;
+		}
+		else num = 0;
+		return num;
+	}
+
+	/**
+	 * Same as ConvertBitToPercent, but reversed
+	 * Input = Output: 0 = 127, 1.0 = 254, -1.0 = 0
+	 */
+	float ConvertPercentToBit(float num) {
+		num = floor(num);
+		if( (num>1.0)||(num<-1.0) ) {
+			num *= 127;
+			num += 127;
+		}
+		else num = 0;
+		return num;
+	}
+	
+	/**
+	 * Runs the motors with arcade steering.
+	 * If button2[top button] on stick1,stick2 are pressed, the tread
+	 * move at constant treadSpeed (originally = 0.5)
+	 * If trigger of stick1 pressed, emergency stop 
 	 */
 	void OperatorControl(void)
 	{
@@ -46,7 +79,7 @@ public:
 		while (IsOperatorControl())
 		{
 			//GetWatchdog().Feed();
-			if(stick1.GetTrigger()) {
+			if(stick1.GetTrigger()) { //if pressed, emergency stop
 				myRobot.Drive(0.0, 0.0);
 			}
 			else {
