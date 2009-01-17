@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wrxml>
-    <properties platform="VxWorks" root="1" type="DownloadableKernelModuleProject"/>
+    <properties platform="VxWorks" platform_name="vxworks-6.3" root="1" type="DownloadableKernelModuleProject"/>
     <attributes>
         <mapAttribute>
             <listAttribute key="BLD::Info|GlobalMacros">
@@ -26,7 +26,6 @@
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC603gnu">
                 <stringAttribute value="-I$(WIND_BASE)/target/h"/>
-                <stringAttribute value="-I$(WIND_BASE)/../WPILib"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/WPILib"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
             </listAttribute>
@@ -247,12 +246,12 @@
     <buildtargets>
         <buildtarget buildtool="Linker" name="SimpleTemplate" passed="false" targetname="SimpleTemplate">
             <contents>
-                <buildtargetreference name="/wwrobotics/SimpleTemplate_partialImage"/>
+                <buildtargetreference name="/SimpleTemplate/SimpleTemplate_partialImage"/>
             </contents>
         </buildtarget>
         <buildtarget buildtool="Partial Image Linker" name="SimpleTemplate_partialImage" passed="true" targetname="SimpleTemplate_partialImage">
             <contents>
-                <folder name="/wwrobotics" recursive="true"/>
+                <folder name="/SimpleTemplate" recursive="true"/>
             </contents>
         </buildtarget>
     </buildtargets>
