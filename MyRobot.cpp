@@ -15,7 +15,7 @@ class RobotDemo : public SimpleRobot
 	
 public:
 	RobotDemo(void):
-		myRobot(1, 2, .25),	// these must be initialized in the same order
+		myRobot(1, 2),	// these must be initialized in the same order
 							// values 1,2 declare ports for motor, 3rd value controls sensitivity (default = .5)
 		stick1(1),		// as they are declared above.
 		stick2(2)
@@ -42,27 +42,35 @@ public:
 	 */
 	void OperatorControl(void)
 	{
+		int foobar = 0;
 		int controlMode = 0;
+		//controlMode is a flag; controlMode == 1, then ArcadeDrive (one-stick control)
+		//if controlMode !== 1, then TankDrive (two-stick control)
+								
 		GetWatchdog().SetEnabled(true);
 		while (IsOperatorControl())
 		{
 			GetWatchdog().Feed();
-			if(stick1.GetTrigger()) {
+	/*		if(stick1.GetTrigger()) { // on trigger, emergency complete stop
 				myRobot.Drive(0.0, 0.0);
-			}
+			}  */
 			if(stick2.GetTrigger())
 				controlMode = 1;
 
 			if(stick2.GetTop())
 				controlMode = 0;
 			
-			if(controlMode == 1) 
+			if(controlMode == 1) { 
 				myRobot.ArcadeDrive(stick2);
+				foobar = 7;
+			}
 			else
 				myRobot.TankDrive(stick1, stick2); // drive with arcade style (use right stick)
 		}
 	}
 };
+
+
 
 START_ROBOT_CLASS(RobotDemo);
 
