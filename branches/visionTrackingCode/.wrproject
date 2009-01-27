@@ -1120,9 +1120,9 @@
         </mapAttribute>
     </attributes>
     <buildtargets>
-        <buildtarget buildtool="Linker" name="visionTrackingCode" passed="false" targetname="visionTrackingCode">
+        <buildtarget buildtool="Linker" name="TwoColorTrackDemo" passed="false" targetname="TwoColorTrackDemo">
             <contents>
-                <folder name="/visionTrackingCode" recursive="true"/>
+                <folder name="/TwoColorTrackDemo" recursive="true"/>
             </contents>
         </buildtarget>
     </buildtargets>
