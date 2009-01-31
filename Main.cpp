@@ -74,12 +74,12 @@ public:
 		// Set belt control integer
 		//	1 - Arcade belt control
 		//	2 - Button belt control
-		int flagSetBelt = 0;
+		int flagSetBelt = 1;
 		// Set drive control interger
 		//	1 - Arcade control
 		//	2 - Tank control
-		int flagSetDrive = 0;
-		//GetWatchdog().SetEnabled(true);
+		int flagSetDrive = 1;
+		GetWatchdog().SetEnabled(true);
 		while (IsOperatorControl()) {
 			GetWatchdog().Feed();
 
