@@ -96,9 +96,6 @@ public:
 			case 1:
 				// Control with stick
 				belts.ArcadeDrive(stick3);
-				if(stick3.GetRawButton(1)){
-					belts.TankDrive(1.0,1.0);
-				}
 				break;
 			
 			case 2:
@@ -150,12 +147,12 @@ public:
 				flagSetDrive = 2;
 			}
 			// Trigger stuff
-			if(stick1.GetRawButton(1)) { //when you press trigger on controller 1 robot (should) stop
+			/*if(stick1.GetRawButton(1)) { //when you press trigger on controller 1 robot (should) stop
 				myRobot.TankDrive(0.0,0.0);
 			}
 			if(stick2.GetRawButton(1)) { //when you press trigger on controller 2 robot (should) stop
 				myRobot.TankDrive(0.0,0.0);
-			}
+			}*/
 			if(stick1.GetRawButton(5)){ // press, do not have to hold down 5 to use tank drive
 				flagSetDrive = 1;
 			}
