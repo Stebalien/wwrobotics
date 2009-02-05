@@ -4,6 +4,8 @@
 #include "TrackAPI.h" 
 #include "WPILib.h"
 #include "math.h"
+#include "base.h"
+#include "belt.h"
 
 /**
  * This is a demo program showing the use of the RobotBase class.
