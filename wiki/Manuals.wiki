@@ -7,10 +7,10 @@
 
 == Programming ==
   * [http://decibel.ni.com/content/community/first?view=all&tagSet=1002 Examples]
-==== Wind River ====
+  ==== Wind River ====
   * [http://first.wpi.edu/Images/CMS/First/C_Programming_Guide_for_FRC.pdf C User Guide]
   * [http://first.wpi.edu/Images/CMS/First/CProgrammingReference.chm C Reference]
-==== Lab View ====
+  ==== Lab View ====
   * [http://decibel.ni.com/content/docs/DOC-8923 General Lab View]
 
 == Competition Manuals ==
