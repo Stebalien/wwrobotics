@@ -1,4 +1,4 @@
-#labels year-2010,Featured
+#labels 2010,Featured
 #Useful links and random notes
 
 = Links =
