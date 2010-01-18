@@ -1,5 +1,5 @@
+#summary Useful links and random notes
 #labels 2010,Featured
-#summery Useful links and random notes
 
 = Links =
 * [http://www.teamtitanium.org/breakaway.zip Breakaway Simulator]
