@@ -2,6 +2,6 @@
 #labels 2010,Featured
 
 = Links =
-* [http://www.teamtitanium.org/breakaway.zip Breakaway Simulator]
-* [http://www.firstwiki.net/index.php/2010_Webcasts 2010 Webcasts]
+ * [http://www.teamtitanium.org/breakaway.zip Breakaway Simulator]
+ * [http://www.firstwiki.net/index.php/2010_Webcasts 2010 Webcasts]
 = Notes =
